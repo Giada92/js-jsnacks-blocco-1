@@ -15,7 +15,7 @@ for (var i = 0; i < 6;  i++) {
     var numeroUtente = parseInt(prompt("Inserisci un numero!"));
     console.log(numeroUtente);
 
-    if (isOdd (numeroUtente) == "dispari") {
+    if (isOdd (numeroUtente) == true) {
         arrayVuoto.push(numeroUtente);
         console.log(arrayVuoto);
     } 
@@ -28,8 +28,8 @@ for (var i = 0; i < 6;  i++) {
 function isOdd(num) {
 
     if (num % 2 != 0){
-        return "dispari";
+        return true;
     } else {
-        return "pari";
+        return false;
     }
 }

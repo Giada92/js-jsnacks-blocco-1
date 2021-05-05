@@ -13,7 +13,7 @@ console.log(cognomiLista);
 
 for (var i = 0; i < 10; i++) {
 
-    
+    document.getElementById("lista").innerHTML += "<li>" + arrayRandom(nomiLista, cognomiLista) + "</li>"
 }
 
 
@@ -29,7 +29,8 @@ function arrayRandom (nome, cognome) {
     var randomCognomi = cognome[Math.floor(Math.random() * cognome.length)];
     console.log(randomCognomi);
 
-    
+    var risultato = randomNomi + " " + randomCognomi;
+    return risultato;
     
 }
 
